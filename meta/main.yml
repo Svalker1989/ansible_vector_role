@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: ansible_vector_role
+  role_name: vector_role
   namespace: my_galaxy_namespace
   author: your name
   description: your role description
