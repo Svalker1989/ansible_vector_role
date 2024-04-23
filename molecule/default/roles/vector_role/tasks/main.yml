@@ -1,11 +1,14 @@
 ---
 - name: Vector| Install package
+  become: true
   ansible.builtin.include_tasks:
     file: install_{{ ansible_facts.pkg_mgr }}.yml
 - name: Vector | Configure service
+  become: true
   ansible.builtin.include_tasks:
     file: configure_service.yml    
 - name: Vector | Configure vector
+  become: true
   ansible.builtin.include_tasks:
     file: configure_vector.yml
 
