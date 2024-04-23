@@ -3,7 +3,7 @@
   become: true
   become_user: root
   ansible.builtin.service:
-    name: vector
+    name: vector.service
     state: restarted
   register: service_status
 #    daemon_reload: true
