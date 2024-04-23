@@ -9,4 +9,4 @@
     src: vector.yml.j2
     mode: '0744'
     dest: "{{ vector_config_dir }}/vector.yml"
-  notify: restart vector service
+
