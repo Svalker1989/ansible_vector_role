@@ -4,12 +4,12 @@ dependency:
 driver:
   name: docker
 platforms:
-  - name: c7
-    image: docker.io/pycontribs/centos:7
-    pre_build_image: true
-  - name: ub
-    image: docker.io/pycontribs/ubuntu:latest
-    pre_build_image: true
+  - name: oracle8
+    image: oraclelinux:8
+    pre_built_image: true
+  - name: ubuntu
+    image: ubuntu:latest
+    pre_built_image: true
 provisioner:
   name: ansible
 verifier:
